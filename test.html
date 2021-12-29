@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            padding: 5px;
+        }
+        .container > div :hover{
+            width: 350px;
+            height: 400px;
+        }
+        .footnote{
+            visibility:hidden;
+        }
+        .footnote :hover{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div> 
+            <img class='box'src="images/fish-farming.jfif" alt="">
+            <div class="footnote">
+                <h3>fish farming</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex esse corporis minus similique, quod minima.</p>
+            </div>   
+        </div>
+    </div>
+</body>
+</html>
