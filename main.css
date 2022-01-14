@@ -43,11 +43,11 @@ a{
 }
 
 #cover{
-    /* background-image: url(images/farming.jfif);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    object-fit: fill; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh
+    /* "width: 100%; margin-bottom: 10%; opacity: 0.7; */
     
 }
 
@@ -98,33 +98,35 @@ a{
     padding: 10px; 
 }
 .footnote :hover{
-     visibility: visible; 
-     position: relative; 
-     background-color: rgba(255, 255, 255, 0.5);
-     z-index: 1;
-     bottom: 35%;
-     width: fit-content; 
-     width: auto;
-     margin: 10px;
-     padding: 10px;
-     background-color: rgba(255, 255, 255, 0.13);
-     color: black; 
+    visibility: visible; 
+    position: relative; 
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    bottom: 35%;
+    width: fit-content; 
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.13);
+    color: black; 
 }
 
 
 .container{
     display: grid;
-    gap: 10px;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr 1fr;
-    /* justify-content: start; */
-
-    
-    
-
+    /* gap: 10px; */
+    margin-top: 40%;
+    grid-template-columns:repeat(auto-fill, minmax(300px,1fr));
+    justify-content: center;    
 }
 .one{
     grid-column-start:1;
     grid-column-end: 4;
-    justify-self: stretch;
+    /* justify-self: stretch; */
+}
+
+img.box{
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block;
 }
