@@ -91,26 +91,33 @@ a {
     /* margin: 10px; */
 }
 
-.img-wrap :hover {
-    width: 290px;
-    ;
-    opacity: 0.7;
-
+.img-wrap{
+    position:relative;
 }
 
 .footnote {
-    visibility: hidden;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 1;
-    bottom: 35%;
-    width: fit-content;
-    /* width: auto; */
-    /* margin: 10px; */
-    padding: 10px;
+    /* visibility: hidden; */
+    position: absolute;
+    top: 30%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 90%;
+    text-align: center;
+    margin: 0px auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(245, 245, 220, 0.219);
 }
 
-.footnote :hover {
+.img-wrap:hover .footnote {
+    opacity: 1;
+}
+
+
+
+/* .footnote :hover {
     visibility: visible;
     position: relative;
     background-color: rgba(255, 255, 255, 0.5);
@@ -122,7 +129,7 @@ a {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.13);
     color: black;
-}
+} */
 
 
 .container {
